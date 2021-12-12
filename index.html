@@ -12,12 +12,12 @@
   <body class="bg-[color:#DAE3E5] bg-opacity-40">
     <header
       class="
-        flex
+        flex flex-col
         space-y-3 space-x-10
         p-7
         justify-center justify-between
         items-center
-        sm:flex-row
+        md:flex-row
       "
     >
       <a href="/"
@@ -48,7 +48,11 @@
         href="/"
         >İletişim</a
       >
-      <img class="h-[70px]" src="/assets/hat.png" alt="hat" />
+      <img
+        class="hidden md:inline-flex md:h-[70px]"
+        src="/assets/hat.png"
+        alt="hat"
+      />
     </header>
   </body>
 </html>
