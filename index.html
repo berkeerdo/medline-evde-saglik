@@ -230,31 +230,40 @@
 
     <!-- Main -->
 
-    <main class="container">
+    <main class="container mx-auto">
       <div
         class="
           flex flex-col-reverse
-          min-h-20
+          items-center
           md:flex-row
-          p-5
-          m-8
+          mt-8
           bg-[#C4C4C4]
           shadow-lg
-          rounded-lg
+          rounded-xl
           max-w-auto
         "
       >
-        <div class="flex flex-col space-y-5 pt-6">
-          <h1 class="font-bold text-3xl pb-3">
-            Evde Bakım Hizmetleri Organizasyonu
-          </h1>
-          <p class="indent-0.5 pr-4 text-base">
-            Evinizde uzman bir sağlık ekibinin desteğine ihtiyaç
-            duyduğunuzda, ihtiyaç duyulan uzman sağlık ekibi
-            yönlendirilerek, hizmet organizasyonu gerçekleştirilir.
-          </p>
+        <div class="flex flex-col space-y-5 px-5 mr-auto">
+          <div class="mb-5">
+            <div>
+              <h1 class="font-bold md:text-2xl lg:text-5xl pb-3 mb-3">
+                Evde Bakım Hizmetleri Organizasyonu
+              </h1>
+            </div>
+            <div class="lg:w-[650px]">
+              <p class="indent-0.5 pr-5 text-lg">
+                Evinizde uzman bir sağlık ekibinin desteğine ihtiyaç
+                duyduğunuzda, ihtiyaç duyulan uzman sağlık ekibi
+                yönlendirilerek, hizmet organizasyonu
+                gerçekleştirilir.
+              </p>
+            </div>
+          </div>
+
           <div>
-            <a href="#" class="flex items-center font-semibold"
+            <a
+              href="#"
+              class="flex items-center font-semibold text-[#222E5E]"
               >Evde Sağlık Hizmeti Almak İçin Tıklayın
               <svg
                 class="ml-3"
@@ -276,14 +285,60 @@
           <img
             src="/assets/Rectangle 27.png"
             alt="main-pho"
-            class="max-h-[500px] md:max-h-[1000px]"
+            class="
+              flex-grow
+              pt-2
+              md:pt-0
+              m-auto
+              hidden
+              md:inline-flex
+            "
           />
         </div>
       </div>
-
-      <div></div>
-      <div></div>
     </main>
+
+    <section
+      class="flex mx-auto flex-col md:flex-row m-8 justify-evenly"
+    >
+      <div
+        class="
+          flex-col
+          bg-[#C4C4C4]
+          p-8
+          max-w-[350px]
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div><h1>Vizyonumuz</h1></div>
+        <div>
+          <p>
+            Medline, toplumun ihtiyaçlarını ön planda tutan, sürekli
+            değişim ve gelişimin öncüsü olan, bir sağlık grubudur.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="
+          flex-col
+          bg-[#C4C4C4]
+          p-5
+          max-w-[350px]
+          rounded-lg
+          shadow-lg
+        "
+      >
+        <div><h1>Misyonumuz</h1></div>
+        <div>
+          <p>
+            Medline, toplumun ihtiyaçlarını ön planda tutan, sürekli
+            değişim ve gelişimin öncüsü olan, bir sağlık grubudur.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
   </body>
